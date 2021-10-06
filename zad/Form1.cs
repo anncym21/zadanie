@@ -24,10 +24,26 @@ namespace zad
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            wybrany.Text = DateTime.Now.ToString("hh:mm");
+            
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kolejka_Click(object sender, EventArgs e)
+        {
+            kolejka.Text = "kolejka";
+        }
+
+        private void data_badania_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void wybrany_Click(object sender, EventArgs e)
         {
 
         }

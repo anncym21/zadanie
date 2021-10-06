@@ -33,8 +33,6 @@ namespace zad
             this.imie = new System.Windows.Forms.TextBox();
             this.nazwa_badania = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.data_badania = new System.Windows.Forms.DateTimePicker();
-            this.aktualna_data = new System.Windows.Forms.DateTimePicker();
             this.dodawanie = new System.Windows.Forms.Button();
             this.usuwanie = new System.Windows.Forms.Button();
             this.wprowadz = new System.Windows.Forms.Button();
@@ -50,6 +48,7 @@ namespace zad
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.za_ile = new System.Windows.Forms.Label();
             this.jak_dawno = new System.Windows.Forms.Label();
+            this.czas = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // imie
@@ -69,23 +68,8 @@ namespace zad
             // 
             // timer1
             // 
-            this.timer1.Interval = 1000;
+            this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // data_badania
-            // 
-            this.data_badania.Location = new System.Drawing.Point(12, 70);
-            this.data_badania.Name = "data_badania";
-            this.data_badania.Size = new System.Drawing.Size(200, 23);
-            this.data_badania.TabIndex = 5;
-            this.data_badania.Value = new System.DateTime(2021, 10, 6, 0, 0, 0, 0);
-            // 
-            // aktualna_data
-            // 
-            this.aktualna_data.Location = new System.Drawing.Point(12, 99);
-            this.aktualna_data.Name = "aktualna_data";
-            this.aktualna_data.Size = new System.Drawing.Size(200, 23);
-            this.aktualna_data.TabIndex = 6;
             // 
             // dodawanie
             // 
@@ -130,6 +114,7 @@ namespace zad
             this.kolejka.Size = new System.Drawing.Size(45, 15);
             this.kolejka.TabIndex = 11;
             this.kolejka.Text = "Kolejka";
+            this.kolejka.Click += new System.EventHandler(this.kolejka_Click);
             // 
             // poprzedni
             // 
@@ -143,11 +128,12 @@ namespace zad
             // wybrany
             // 
             this.wybrany.AutoSize = true;
-            this.wybrany.Location = new System.Drawing.Point(12, 173);
+            this.wybrany.Location = new System.Drawing.Point(13, 86);
             this.wybrany.Name = "wybrany";
-            this.wybrany.Size = new System.Drawing.Size(87, 15);
+            this.wybrany.Size = new System.Drawing.Size(29, 15);
             this.wybrany.TabIndex = 13;
-            this.wybrany.Text = "wybrana osoba";
+            this.wybrany.Text = "czas";
+            this.wybrany.Click += new System.EventHandler(this.wybrany_Click);
             // 
             // nastepny
             // 
@@ -213,11 +199,21 @@ namespace zad
             this.jak_dawno.TabIndex = 21;
             this.jak_dawno.Text = "Ile dni temu:";
             // 
+            // czas
+            // 
+            this.czas.AutoSize = true;
+            this.czas.Location = new System.Drawing.Point(13, 71);
+            this.czas.Name = "czas";
+            this.czas.Size = new System.Drawing.Size(50, 15);
+            this.czas.TabIndex = 22;
+            this.czas.Text = "Godzina";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(455, 368);
+            this.Controls.Add(this.czas);
             this.Controls.Add(this.jak_dawno);
             this.Controls.Add(this.za_ile);
             this.Controls.Add(this.textBox2);
@@ -233,8 +229,6 @@ namespace zad
             this.Controls.Add(this.wprowadz);
             this.Controls.Add(this.usuwanie);
             this.Controls.Add(this.dodawanie);
-            this.Controls.Add(this.aktualna_data);
-            this.Controls.Add(this.data_badania);
             this.Controls.Add(this.nazwa_badania);
             this.Controls.Add(this.imie);
             this.Name = "Form1";
@@ -248,8 +242,6 @@ namespace zad
         private System.Windows.Forms.TextBox imie;
         private System.Windows.Forms.TextBox nazwa_badania;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.DateTimePicker data_badania;
-        private System.Windows.Forms.DateTimePicker aktualna_data;
         private System.Windows.Forms.Button dodawanie;
         private System.Windows.Forms.Button usuwanie;
         private System.Windows.Forms.Button wprowadz;
@@ -265,6 +257,7 @@ namespace zad
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label za_ile;
         private System.Windows.Forms.Label jak_dawno;
+        private System.Windows.Forms.Label czas;
     }
 }
 
