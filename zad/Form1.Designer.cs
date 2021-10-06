@@ -49,11 +49,12 @@ namespace zad
             this.za_ile = new System.Windows.Forms.Label();
             this.jak_dawno = new System.Windows.Forms.Label();
             this.czas = new System.Windows.Forms.Label();
+            this.data = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // imie
             // 
-            this.imie.Location = new System.Drawing.Point(12, 12);
+            this.imie.Location = new System.Drawing.Point(144, 147);
             this.imie.Name = "imie";
             this.imie.Size = new System.Drawing.Size(100, 23);
             this.imie.TabIndex = 3;
@@ -61,7 +62,7 @@ namespace zad
             // 
             // nazwa_badania
             // 
-            this.nazwa_badania.Location = new System.Drawing.Point(12, 41);
+            this.nazwa_badania.Location = new System.Drawing.Point(144, 191);
             this.nazwa_badania.Name = "nazwa_badania";
             this.nazwa_badania.Size = new System.Drawing.Size(100, 23);
             this.nazwa_badania.TabIndex = 4;
@@ -128,7 +129,7 @@ namespace zad
             // wybrany
             // 
             this.wybrany.AutoSize = true;
-            this.wybrany.Location = new System.Drawing.Point(13, 86);
+            this.wybrany.Location = new System.Drawing.Point(12, 24);
             this.wybrany.Name = "wybrany";
             this.wybrany.Size = new System.Drawing.Size(29, 15);
             this.wybrany.TabIndex = 13;
@@ -202,17 +203,27 @@ namespace zad
             // czas
             // 
             this.czas.AutoSize = true;
-            this.czas.Location = new System.Drawing.Point(13, 71);
+            this.czas.Location = new System.Drawing.Point(12, 9);
             this.czas.Name = "czas";
             this.czas.Size = new System.Drawing.Size(50, 15);
             this.czas.TabIndex = 22;
             this.czas.Text = "Godzina";
             // 
+            // data
+            // 
+            this.data.AutoSize = true;
+            this.data.Location = new System.Drawing.Point(144, 235);
+            this.data.Name = "data";
+            this.data.Size = new System.Drawing.Size(31, 15);
+            this.data.TabIndex = 23;
+            this.data.Text = "Data";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 368);
+            this.ClientSize = new System.Drawing.Size(442, 352);
+            this.Controls.Add(this.data);
             this.Controls.Add(this.czas);
             this.Controls.Add(this.jak_dawno);
             this.Controls.Add(this.za_ile);
@@ -258,6 +269,7 @@ namespace zad
         private System.Windows.Forms.Label za_ile;
         private System.Windows.Forms.Label jak_dawno;
         private System.Windows.Forms.Label czas;
+        private System.Windows.Forms.Label data;
     }
 }
 
