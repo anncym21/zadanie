@@ -52,10 +52,10 @@ namespace zad
 
         private void wybrany_Click(object sender, EventArgs e)
         {
-            osoba osoba1;
-            osoba1.imie_wartosc = imie.Text;
-            osoba1.nazwisko_wartosc = nazwisko.Text;
-            osoba1.data_i_czas = daty.Value;
+            osoba kolejna_osoba;
+            kolejna_osoba.imie_wartosc = imie.Text;
+            kolejna_osoba.nazwisko_wartosc = nazwisko.Text;
+            kolejna_osoba.data_i_czas = daty.Value;
             
 
         }
