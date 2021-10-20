@@ -12,9 +12,12 @@ namespace zad
 {
     public partial class Form1 : Form
     {///
-        string imie_wartosc = "";
-        string nazwisko_wartosc = "";
-        DateTime data_i_czas;
+        public struct osoba
+        {
+            public string imie_wartosc;
+            public string nazwisko_wartosc;
+            public DateTime data_i_czas;
+        }
        
         public Form1()
         {
@@ -49,9 +52,11 @@ namespace zad
 
         private void wybrany_Click(object sender, EventArgs e)
         {
-            imie_wartosc = imie.Text;
-            nazwisko_wartosc = nazwisko.Text;
-            data_i_czas = daty.Value;
+            osoba osoba1;
+            osoba1.imie_wartosc = imie.Text;
+            osoba1.nazwisko_wartosc = nazwisko.Text;
+            osoba1.data_i_czas = daty.Value;
+            
 
         }
     }
