@@ -50,6 +50,8 @@ namespace zad
             this.jak_dawno = new System.Windows.Forms.Label();
             this.czas = new System.Windows.Forms.Label();
             this.data = new System.Windows.Forms.Label();
+            this.nazwisko = new System.Windows.Forms.TextBox();
+            this.daty = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // imie
@@ -218,11 +220,27 @@ namespace zad
             this.data.TabIndex = 23;
             this.data.Text = "Data";
             // 
+            // nazwisko
+            // 
+            this.nazwisko.Location = new System.Drawing.Point(271, 147);
+            this.nazwisko.Name = "nazwisko";
+            this.nazwisko.Size = new System.Drawing.Size(100, 23);
+            this.nazwisko.TabIndex = 24;
+            // 
+            // daty
+            // 
+            this.daty.Location = new System.Drawing.Point(220, 255);
+            this.daty.Name = "daty";
+            this.daty.Size = new System.Drawing.Size(200, 23);
+            this.daty.TabIndex = 25;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 352);
+            this.Controls.Add(this.daty);
+            this.Controls.Add(this.nazwisko);
             this.Controls.Add(this.data);
             this.Controls.Add(this.czas);
             this.Controls.Add(this.jak_dawno);
@@ -270,6 +288,8 @@ namespace zad
         private System.Windows.Forms.Label jak_dawno;
         private System.Windows.Forms.Label czas;
         private System.Windows.Forms.Label data;
+        private System.Windows.Forms.TextBox nazwisko;
+        private System.Windows.Forms.DateTimePicker daty;
     }
 }
 

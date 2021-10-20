@@ -15,6 +15,7 @@ namespace zad
         string imie_wartosc = "";
         string nazwisko_wartosc = "";
         DateTime data_i_czas;
+       
         public Form1()
         {
             InitializeComponent();
@@ -49,8 +50,9 @@ namespace zad
         private void wybrany_Click(object sender, EventArgs e)
         {
             imie_wartosc = imie.Text;
-            nazwisko_wartosc = nazwisko_wartosc.Text;
+            nazwisko_wartosc = nazwisko.Text;
             data_i_czas = daty.Value;
+
         }
     }
 }
