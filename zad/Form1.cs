@@ -48,7 +48,9 @@ namespace zad
 
         private void wybrany_Click(object sender, EventArgs e)
         {
-
+            imie_wartosc = imie.Text;
+            nazwisko_wartosc = nazwisko_wartosc.Text;
+            data_i_czas = daty.Value;
         }
     }
 }
