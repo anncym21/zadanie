@@ -11,7 +11,10 @@ using System.Windows.Forms;
 namespace zad
 {
     public partial class Form1 : Form
-    {
+    {//
+        string imie_wartosc = "";
+        string nazwisko_wartosc = "";
+        DateTime data_i_czas;
         public Form1()
         {
             InitializeComponent();
